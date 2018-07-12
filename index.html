@@ -1,2 +1,35 @@
-<h1> Jeffrey i own your domain</h1>
-<p> also i love u </p>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>xoxo</title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: white;"> Jeffrey i own your domain</h1>
+            <img style="width: 200px;" src="jeffrey.png">
+            <p style="color: white;"> <em>also i love u</em> </p>
+            <p style="color: white;"> xoxo, ur secret admirer </p>
+        </center>
+    </body>
+</html>
+
+<style>
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+</style>
+
+<script>
+function colour_random() {
+  var num = Math.floor(Math.random() * Math.pow(2, 24));
+  return '#' + ('00000' + num.toString(16)).substr(-6);
+}
+function color_change(){
+  document.body.style.backgroundColor = (colour_random());
+}
+
+window.setInterval(color_change, 500);
+</script>
